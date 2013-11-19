@@ -1,0 +1,140 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font: 16px 'Droid Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+.landscape {
+  min-height: 18rem;
+  width: 100%;
+}
+.bfirst {
+  background: #cd404b;
+  color: #fbfbfb;
+}
+.bsecond {
+  background: #7b7b7b;
+  color: #fbfbfb;
+}
+.bthird {
+  background: #fbfbfb;
+  color: #cb4d55;
+}
+.bfourth {
+  background: #cb4d55;
+}
+header {
+  width: 100%;
+}
+header ul {
+  background: #cd404b;
+  display: table;
+  list-style: none;
+  width: 100%;
+}
+header ul li {
+  font: 1.3rem 'Abril Fatface';
+  padding: 0.5rem;
+  text-align: center;
+}
+header ul li a {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+header div {
+  min-height: 12.75rem;
+  padding: 0.2rem;
+  text-align: center;
+  width: 100%;
+}
+header div img {
+  max-height: 9.375rem;
+  max-width: 18.75rem;
+  width: 50%;
+}
+header div h2 {
+  color: #cb4d55;
+  font: 1.8rem 'Abril Fatface';
+}
+#people {
+  background: url("../img/landscape1.jpg") center top no-repeat;
+}
+main>section,
+footer {
+  min-height: 18.75rem;
+  padding: 1rem;
+  width: 100%;
+}
+main>section h3,
+footer h3 {
+  font: 2.5rem 'Abril Fatface';
+}
+main>section article,
+footer article {
+  font-family: 'Droid Sans';
+}
+main>section article>a,
+footer article>a {
+  display: inline-block;
+  width: 48%;
+}
+main>section article>a img,
+footer article>a img {
+  width: 100%;
+}
+main>section article>h4,
+footer article>h4 {
+  display: inline-block;
+  font-size: 1.3rem;
+  width: 48%;
+}
+footer {
+  background: #333;
+}
+.three-cols {
+  width: 100%;
+}
+.three-cols>.col {
+  margin: 1rem auto;
+  width: 80%;
+}
+@media (min-width: 43.75rem) {
+  html,
+  body {
+    font-size: 18px;
+  }
+  header ul li {
+    display: table-cell;
+    width: 25%;
+  }
+  .al-left {
+    text-align: left;
+  }
+  .al-right {
+    text-align: right;
+  }
+  .three-cols>.col {
+    display: inline-block;
+    width: 48%;
+  }
+}
+@media (min-width: 74rem) {
+  html,
+  body {
+    font-size: 22px;
+  }
+  .landscape {
+    min-height: 15rem;
+  }
+  .three-cols>.col {
+    display: inline-block;
+    width: 32%;
+  }
+}

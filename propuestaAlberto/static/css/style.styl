@@ -1,0 +1,145 @@
+first-color = darken(#D35861,10%)
+second-color = #7B7B7B
+third-color = #FBFBFB
+fourth-color = darken(#DB8389,20%)
+
+first-font = 'Droid Sans'
+second-font = 'Abril Fatface'
+
+
+*
+    border 0
+    box-sizing border-box
+    -moz-box-sizing border-box
+    margin 0
+    padding 0
+
+html,body
+    font 16px first-font , sans-serif
+    height 100%
+    width 100%
+
+.landscape
+    min-height 18rem
+    width 100%
+
+.bfirst
+    background first-color
+    color third-color
+
+.bsecond
+    background second-color
+    color third-color
+
+.bthird
+    background third-color
+    color fourth-color
+
+.bfourth
+    background fourth-color
+
+
+header
+    width 100%
+
+    ul
+        background first-color
+        display table
+        list-style none
+        width 100%
+
+        li
+            font 1.3rem second-font
+            padding .5rem
+            text-align center
+
+            a
+                color third-color
+                text-decoration none
+
+    div
+        min-height 12.75rem
+        padding .2rem
+        text-align center
+        width 100%
+
+        img
+            max-height 9.375rem
+            max-width 18.75rem
+            width 50%
+
+        h2
+            color fourth-color
+            font 1.8rem second-font
+
+#people
+    background url('../img/landscape1.jpg') center top no-repeat
+
+main>section,footer
+        min-height 18.75rem
+        padding 1rem
+        width 100%
+
+        h3
+            font 2.5rem second-font
+
+        article
+            font-family first-font
+
+            &>a
+                display inline-block
+                width 48%
+
+                img
+                    width 100%
+
+            &>h4
+                display inline-block
+                font-size 1.3rem
+                width 48%
+
+footer
+    background #333
+
+.three-cols
+    width 100%
+
+    &>.col
+        margin 1rem auto
+        width 80%
+
+
+@media (min-width: 43.75rem)
+    html,body
+        font-size 18px
+
+    header
+        ul
+            li
+                display table-cell
+                width 25%
+
+    .al-left
+        text-align left
+
+    .al-right
+        text-align right
+
+    .three-cols
+        &>.col
+            display inline-block
+            width 48%
+
+
+
+@media (min-width: 74rem)
+    html,body
+        font-size 22px
+
+    .landscape
+        min-height 15rem
+
+    .three-cols
+        &>.col
+            display inline-block
+            width 32%
